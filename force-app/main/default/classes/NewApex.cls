@@ -6,4 +6,9 @@ public with sharing class NewApex {
     {
         return a+b;
     }
+
+    public integer subtract(integer a, integer b)
+    {
+        return a-b;
+    }
 }
