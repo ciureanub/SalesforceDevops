@@ -1,8 +1,8 @@
-trigger AccountTrigger on SOBJECT (before insert, before update) {
+trigger AccountTrigger on Account (before insert, before update) {
     if (trigger.isInsert){
 
     }
-    else if(trigger.IsUpgate){
+    else if(trigger.IsUpdate){
         
     }
 }
