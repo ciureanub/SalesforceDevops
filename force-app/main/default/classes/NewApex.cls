@@ -15,6 +15,6 @@ public with sharing class NewApex {
     public integer div(integer a, integer b)
     {
         return a/b;
-    }
+    } 
     
 }
