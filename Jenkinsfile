@@ -13,7 +13,6 @@ node {
     //def toolbelt = tool 'toolbelt'
     //replacing toolbelt definition due to improper Jenkins plugin version
     def toolbelt = env.SFDX
-    //println SFDX
 	
     println 'KEY IS' 
     println JWT_KEY_CRED_ID
