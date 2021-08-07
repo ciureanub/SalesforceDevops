@@ -10,16 +10,18 @@ node {
     def SFDC_HOST = env.SFDC_HOST_DH
     def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
     def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
-
+    //def toolbelt = tool 'toolbelt'
+    //replacing toolbelt definition due to improper Jenkins plugin version
+    def toolbelt = env.SFDX
+    //println SFDX
+	
     println 'KEY IS' 
     println JWT_KEY_CRED_ID
     println HUB_ORG
     println SFDC_HOST
     println CONNECTED_APP_CONSUMER_KEY
-    //def toolbelt = tool 'toolbelt'
-    //replacing toolbelt definition due to improper Jenkins plugin version
-    def toolbelt = env.SFDX
-    println SFDX
+
+   
 
     stage('checkout source') {
         // when running in multi-branch job, one must issue this command
