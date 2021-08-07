@@ -18,7 +18,7 @@ node {
     println CONNECTED_APP_CONSUMER_KEY
     //def toolbelt = tool 'toolbelt'
     //replacing toolbelt definition due to improper Jenkins plugin version
-    def toolbelt = c:\"Program Files"\sfdx\bin\sfdx
+    def toolbelt = env.SFDX
 
     stage('checkout source') {
         // when running in multi-branch job, one must issue this command
